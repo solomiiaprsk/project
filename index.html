@@ -8,8 +8,6 @@
   </head>
   <body>
     <div class="contact-section-wrapper">
-      <div>IMAGE</div>
-
       <div class="contact-form-wrapper">
         <form
           class="contact-form"
@@ -77,6 +75,31 @@
 
           <button class="contact-form-btn" type="submit">Send</button>
         </form>
+      </div>
+
+      <div class="rent-yacht-image-container">
+        <picture>
+          <source
+            srcset=" dwie kropki i potem jedna usuwamy
+              ./imag/rentayacht-desctop.jpg 1x,
+              ./images/cashless@2x.jpg      2x
+            "
+            media="(min-width: 1280px)"
+          />
+          <source
+            srcset="./images/-tablet.jpg 1x, ./images/-tablet@2x.jpg 2x"
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="./images/-mobile.jpg 1x, ./images/-mobile@2x.jpg 2x"
+            media="(max-width: 767px)"
+          />
+          <img
+            srcset="./images/cashless@2x.jpg 2x"
+            src="./images/cashless.jpg"
+            alt="yacht-picture"
+          />
+        </picture>
       </div>
     </div>
   </body>
